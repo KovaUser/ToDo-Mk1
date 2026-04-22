@@ -1,6 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
 :root {
 
   background: linear-gradient(161.746deg, #292588 0%, #10102D 100%);
-
+  font-family: Inter;
+  color: white;
+    height: 100vh;
 }
-
