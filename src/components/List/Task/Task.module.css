@@ -1,0 +1,14 @@
+.taskContent{
+    display: flex;
+    align-items: center;
+    border-radius: 18px;
+    padding: 24px 33px;
+    justify-content: space-between;
+}
+.active {
+        border: solid 2px #7C1F1C ;
+}
+
+.completed {
+    border: solid 2px #7c1f1c60 ;
+}

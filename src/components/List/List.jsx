@@ -1,6 +1,6 @@
 import s from "./List.module.css"
 
-
+import Task from "./Task/Task"
 
 function List(props) {
     
@@ -9,11 +9,15 @@ function List(props) {
       <section className={s.section}>
            
         <div className="container">
-            Некс ID: {props.ListPage.NextId}
+           {props.ListPage.ToDoData.map((p)=><Task status={p.status} task={p.task} emodji={p.emodji} progress={p.progress} date={p.date}/>)}
         </div>
              
+        <textarea placeholder="Задача" name="" id=""></textarea>
+        <textarea placeholder="Эмодзи" name="" id=""></textarea>
+        <textarea placeholder="Дата" name="" id=""></textarea>
       </section>
   )
+  
 }
 
 export default List
